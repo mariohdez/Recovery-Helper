@@ -1,0 +1,6 @@
+framework module Pods_Recovery_Helper {
+  umbrella header "Pods-Recovery Helper-umbrella.h"
+
+  export *
+  module * { export * }
+}

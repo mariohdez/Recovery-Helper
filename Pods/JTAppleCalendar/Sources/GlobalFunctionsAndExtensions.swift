@@ -1,32 +1,32 @@
 //
 //  GlobalFunctionsAndExtensions.swift
-//  Pods
 //
-//  Created by JayT on 2016-06-26.
+//  Copyright (c) 2016-2017 JTAppleCalendar (https://github.com/patchthecode/JTAppleCalendar)
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-
-func delayRunOnMainThread(_ delay: Double, closure: @escaping () -> ()) {
-    DispatchQueue.main.asyncAfter(
-        deadline: DispatchTime.now() +
-            Double(Int64(delay * Double(NSEC_PER_SEC))) /
-            Double(NSEC_PER_SEC), execute: closure)
-}
-
-func delayRunOnGlobalThread(_ delay: Double,
-                            qos: DispatchQoS.QoSClass,
-                            closure: @escaping () -> ()) {
-    DispatchQueue.global(qos: qos).asyncAfter(
-        deadline: DispatchTime.now() +
-            Double(Int64(delay * Double(NSEC_PER_SEC))) /
-            Double(NSEC_PER_SEC), execute: closure
-    )
-}
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 extension Calendar {
     static let formatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MM dd"
+        dateFormatter.isLenient = true
         return dateFormatter
     }()
     
@@ -39,11 +39,11 @@ extension Calendar {
     func endOfMonth(for date: Date) -> Date? {
         guard
             let comp = dateFormatterComponents(from: date),
-            let day = self.range(of: .day, in: .month, for: date)?.count else {
+            let day = self.range(of: .day, in: .month, for: date)?.count,
+            let retVal = Calendar.formatter.date(from: "\(comp.year) \(comp.month) \(day)") else {
                 return nil
         }
-        
-        return Calendar.formatter.date(from: "\(comp.year) \(comp.month) \(day)")
+        return retVal
     }
     
     private func dateFormatterComponents(from date: Date) -> (month: Int, year: Int)? {

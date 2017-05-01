@@ -209,16 +209,7 @@ class ExerciseController: UIViewController {
                 print ("Good.");
             } else {
                 exit(EXIT_FAILURE);
-                
             }
-            
-            /*if let intValueA = Int(textFieldA),
-             let intValueB = Int(textFieldB) {
-             let result = intValueA + intValueB
-             answerLabel.text = "The acceleration is \(result)"
-             }*/
-            
-            
             let numRep = Int(repetionsTargetInput.text!)
             let numRepsNS = NSNumber(value: numRep!)
             let extAngle = Int(extensionTargetInput.text!)

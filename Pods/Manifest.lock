@@ -47,7 +47,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
-  - JTAppleCalendar (6.1.1)
+  - JTAppleCalendar (7.0.2)
   - LBTAComponents (0.1.9)
 
 DEPENDENCIES:
@@ -56,7 +56,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - JTAppleCalendar
+  - JTAppleCalendar (~> 7.0.2)
   - LBTAComponents (~> 0.1.9)
 
 SPEC CHECKSUMS:
@@ -72,9 +72,9 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
-  JTAppleCalendar: fc53eb29ec81f8a90969e2d214b3aa610ab4e5b3
+  JTAppleCalendar: c14685634064ef67a68209548ff3443208af48a3
   LBTAComponents: 9a5d314080d1f80208062ccc81a2d25225c5f572
 
-PODFILE CHECKSUM: 8a93a5cc0f4261eb5fe49b61e500a554a6c2a40a
+PODFILE CHECKSUM: 4b9ea0770c155cf2ca45c9ada974268f5b517251
 
 COCOAPODS: 1.1.1

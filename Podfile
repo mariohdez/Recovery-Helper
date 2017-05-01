@@ -12,5 +12,5 @@ target 'Recovery Helper' do
   pod 'Firebase/Storage'
   pod 'ChameleonFramework/Swift'
   pod 'LBTAComponents', '~> 0.1.9'
-  pod 'JTAppleCalendar'
+  pod 'JTAppleCalendar', '~> 7.0.2'
 end

@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D634C92AEC3D618AB61BD758 /* Pods_Recovery_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D4222C2F472BD9FA512FD9 /* Pods_Recovery_Helper.framework */; };
+		E110D9E41EB68916008D402B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E110D9E31EB68916008D402B /* CalendarViewController.swift */; };
+		E110D9E61EB6A6A0008D402B /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E110D9E51EB6A6A0008D402B /* settings@2x.png */; };
 		E129B6511E0E26740012B553 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E129B6501E0E26730012B553 /* GoogleService-Info.plist */; };
 		E129B6541E149A420012B553 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129B6531E149A420012B553 /* PatientModel.swift */; };
 		E129B6581E176B750012B553 /* PatientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E129B6571E176B750012B553 /* PatientController.swift */; };
+		E138F1CD1EB67C7500E2DB4F /* calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E138F1CC1EB67C7500E2DB4F /* calendar.storyboard */; };
+		E138F1CF1EB67E8800E2DB4F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E138F1CE1EB67E8800E2DB4F /* CustomCell.swift */; };
+		E15C1D641EB6B97300D947CE /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C1D631EB6B97300D947CE /* DateViewController.swift */; };
 		E167698F1E2DED090026E835 /* SetExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167698E1E2DED090026E835 /* SetExercise.swift */; };
 		E16769911E2DF4D40026E835 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16769901E2DF4D40026E835 /* Patients.swift */; };
 		E1AE8ABF1E0E179C006938CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE8ABE1E0E179C006938CB /* AppDelegate.swift */; };
@@ -30,9 +35,14 @@
 		3D295C21902B7D49BBD67084 /* Pods-Recovery Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recovery Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Recovery Helper/Pods-Recovery Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		6F25652CB59A75354DA90CFC /* Pods-Recovery Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recovery Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Recovery Helper/Pods-Recovery Helper.release.xcconfig"; sourceTree = "<group>"; };
 		C1D4222C2F472BD9FA512FD9 /* Pods_Recovery_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recovery_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E110D9E31EB68916008D402B /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E110D9E51EB6A6A0008D402B /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "../../../settings@2x.png"; sourceTree = "<group>"; };
 		E129B6501E0E26730012B553 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E129B6531E149A420012B553 /* PatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
 		E129B6571E176B750012B553 /* PatientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientController.swift; sourceTree = "<group>"; };
+		E138F1CC1EB67C7500E2DB4F /* calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = calendar.storyboard; sourceTree = "<group>"; };
+		E138F1CE1EB67E8800E2DB4F /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E15C1D631EB6B97300D947CE /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		E167698E1E2DED090026E835 /* SetExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetExercise.swift; sourceTree = "<group>"; };
 		E16769901E2DF4D40026E835 /* Patients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		E1AE8ABB1E0E179C006938CB /* Recovery Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recovery Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +93,9 @@
 		E129B6521E0E6BFE0012B553 /* myAssets */ = {
 			isa = PBXGroup;
 			children = (
+				E138F1CC1EB67C7500E2DB4F /* calendar.storyboard */,
+				E110D9E51EB6A6A0008D402B /* settings@2x.png */,
+				E138F1CE1EB67E8800E2DB4F /* CustomCell.swift */,
 				E1AE8AC51E0E179C006938CB /* Assets.xcassets */,
 				E1AE8AC71E0E179C006938CB /* LaunchScreen.storyboard */,
 				E1AE8ABE1E0E179C006938CB /* AppDelegate.swift */,
@@ -102,6 +115,8 @@
 				E167698E1E2DED090026E835 /* SetExercise.swift */,
 				E1C436121E1B13F000DBAA23 /* OptionsLauncher.swift */,
 				E1C4361E1E1B97CF00DBAA23 /* ExerciseController.swift */,
+				E110D9E31EB68916008D402B /* CalendarViewController.swift */,
+				E15C1D631EB6B97300D947CE /* DateViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E110D9E61EB6A6A0008D402B /* settings@2x.png in Resources */,
+				E138F1CD1EB67C7500E2DB4F /* calendar.storyboard in Resources */,
 				E1AE8AC91E0E179C006938CB /* LaunchScreen.storyboard in Resources */,
 				E129B6511E0E26740012B553 /* GoogleService-Info.plist in Resources */,
 				E1AE8AC61E0E179C006938CB /* Assets.xcassets in Resources */,
@@ -292,6 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15C1D641EB6B97300D947CE /* DateViewController.swift in Sources */,
+				E110D9E41EB68916008D402B /* CalendarViewController.swift in Sources */,
 				E1AE8AC11E0E179C006938CB /* LoginController.swift in Sources */,
 				E1C436131E1B13F000DBAA23 /* OptionsLauncher.swift in Sources */,
 				E1C436161E1B1F9100DBAA23 /* OptionsCell.swift in Sources */,
@@ -304,6 +323,7 @@
 				E1C436181E1B205500DBAA23 /* BaseCell.swift in Sources */,
 				E16769911E2DF4D40026E835 /* Patients.swift in Sources */,
 				E1AE8ABF1E0E179C006938CB /* AppDelegate.swift in Sources */,
+				E138F1CF1EB67E8800E2DB4F /* CustomCell.swift in Sources */,
 				E129B6581E176B750012B553 /* PatientController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

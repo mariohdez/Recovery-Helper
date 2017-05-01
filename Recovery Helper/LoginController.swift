@@ -147,6 +147,11 @@ class LoginController: UIViewController {
         
         print("viewDidAppear")
         
+//        DispatchQueue.main.async(execute: {
+//            
+//        })
+        
+        
         
         
         if (FIRAuth.auth()?.currentUser) != nil {
@@ -173,7 +178,6 @@ class LoginController: UIViewController {
             
         }else{
             print("Message from viewWillAppear: User is not logged in...")
-            
         }
     }
     
@@ -369,11 +373,17 @@ class LoginController: UIViewController {
     
     
     func goToPatientView(){
-        let patientController:PatientController = PatientController()
-        
-        let navigationController = UINavigationController(rootViewController: patientController)
-        
+        let storyboard = UIStoryboard(name: "calendar", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "calendar")
+        let navigationController = UINavigationController(rootViewController: vc)
         present(navigationController, animated: false, completion: nil)
+//        self.navigationController!.pushViewController(vc, animated: true)
+        // calendar
+/*        let patientController:PatientController = PatientController()
+        
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        present(navigationController, animated: false, completion: nil)*/
     }
     
     func goToPhysicianView(){

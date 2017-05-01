@@ -57,7 +57,6 @@ class PatientModel {
         return self.patientFrqHistory.count
     }
     
-    
     func arrayFromContentsOfFileWithName(_ fileName: String) -> [String]? {
         var content: String = ""
         guard let path = Bundle.main.path(forResource: fileName, ofType: "txt")
